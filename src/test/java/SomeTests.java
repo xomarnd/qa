@@ -6,9 +6,9 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class SomeTests {
     public static void main(String[] args) {
-        open("https://www.e-katalog.ru/"); //открывакем е.маркет
-        $("#ek-search").val("холодильник").pressEnter(); //находим поле поиска, вводим холодильник, жмем enter
-        $(By.xpath("//a[@class='model-short-title no-u']")).click(); //находим первую ссылку в выдаче, кликаем
-        $(byText("Холодильник")).should(exist); //позитивный тест на слово "Холодильник"
+        open("https://www.e-katalog.ru/"); //РѕС‚РєСЂС‹РІР°РєРµРј Рµ.РјР°СЂРєРµС‚
+        $("#ek-search").val("С…РѕР»РѕРґРёР»СЊРЅРёРє").pressEnter(); //РЅР°С…РѕРґРёРј РїРѕР»Рµ РїРѕРёСЃРєР°, РІРІРѕРґРёРј С…РѕР»РѕРґРёР»СЊРЅРёРє, Р¶РјРµРј enter
+        $(By.xpath("//a[@class='model-short-title no-u']")).click(); //РЅР°С…РѕРґРёРј РїРµСЂРІСѓСЋ СЃСЃС‹Р»РєСѓ РІ РІС‹РґР°С‡Рµ, РєР»РёРєР°РµРј
+        $(byText("РҐРѕР»РѕРґРёР»СЊРЅРёРє")).should(exist); //РїРѕР·РёС‚РёРІРЅС‹Р№ С‚РµСЃС‚ РЅР° СЃР»РѕРІРѕ "РҐРѕР»РѕРґРёР»СЊРЅРёРє"
     }
 }
